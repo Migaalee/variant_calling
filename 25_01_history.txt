@@ -1,0 +1,134 @@
+Script started on 2022-01-25 13:46:20+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git ass[K[Kdd README 
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git add 25_01_history.txt 
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git commit -m "testing variant calling [K [K 4plex 3[K20 [Kplex"
+[master (root-commit) b67301b] testing variant calling 4plex 20plex
+ 2 files changed, 1 insertion(+)
+ create mode 100644 25_01_history.txt
+ create mode 100644 README
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git remote add origin https://github.com/Migaalee/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khttps://github.com/Migaalee/variant_calling.git
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git push orih[Kgin master
+Username for 'https://github.com': Migaalee
+Password for 'https://Migaalee@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Migaalee/variant_calling.git/'
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git push origin master
+Username for 'https://github.com': Migaalee
+Password for 'https://Migaalee@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Migaalee/variant_calling.git/'
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git push origin master
+Username for 'https://github.com': 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^[[3~^[[3~^[[3~^[[3~^[[3~^[[3~^[[3~^[[3~                                                                                Migaalee
+Password for 'https://Migaalee@github.com': 
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 384 bytes | 384.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/Migaalee/variant_calling/pull/new/master[K
+remote: 
+To https://github.com/Migaalee/variant_calling.git
+ * [new branch]      master -> master
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git push origin master[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kll [K[K[K[K[K[K[K[K[Kgit remote add origin https://github.com/Migaalee/variant_calling.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit commit -m "testing variant calling 4plex 20plex"[26Padd 25_01_history.txt commit -m "testing variant calling 4plex 20plex"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit pull https://github.com/Migaalee/variant_calling/pull/new/master
+fatal: unable to update url base from redirection:
+  asked for: https://github.com/Migaalee/variant_calling/pull/new/master/info/refs?service=git-upload-pack
+   redirect: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FMigaalee%2Fvariant_calling%2Fpull%2Fnew%2Fmaster%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# for in[K[K[K[Kr i in $(find ./ -type f -name "*.fastq.gz" \[K| while read F[KF [K; do basename $F | rev  | cut -c 22- | rev,[K; done | sort | uniq)
+> do echo "Merging R1"
+> cat "$i"_L00*_R1_001.fastq.gz > "$i"_ME_L001_R1_001-[K.fastq.gz
+> echo "Merging R2"
+> cat "i[K$i"_L00*_R2_001.fastq.gz > "$i"_ME_L001_R2_001.fastq.gz >> fastq_lane_merging.sh
+> done
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# chmod +x fastq_lane_merginf[Kg.sh
+chmod: cannot access 'fastq_lane_merging.sh': No such file or directory
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# nano fastq_lane_merging.sh
+[?2004h[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;57H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                        fastq_lane_merging.sh                                                  [1;124H(B[m[37d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[38d(B[0;7m^X(B[m Exit[38;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[36d[2d[39;49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[1;116H(B[0;7mModified(B[m[2d[32mfor[39m(B[m i [32min[39m(B[m[?12l[?25h[?25l [32m$([39m(B[mfind ./(B[0;1m[35m -t[39m(B[m[?12l[?25h[?25l -type f(B[0;1m[35m -n[36d[39m(B[m[K[2;30H[?12l[?25h[?25l -name "*[?12l[?25h[?25l.fastq.g[?12l[?25h[?25l[2;34H(B[0;1m[33m"*.fastq.gz"[39m(B[m [32m|[39m(B[m w[?12l[?25h[?25l[32mwhile[39m(B[m rea[?12l[?25h[?25l[32mread[39m(B[m F[32m;[39m(B[m [32mdo[39m(B[m basena[?12l[?25h[?25lme (B[0;1m[31m$F(B[0m[42m [49m(B[m[?12l[?25h[?25l [32m|[39m(B[m rev [32m|[39m(B[m[?12l[?25h[?25l (B[0;1m[34mcut[35m -c[39m(B[m[?12l[?25h[?25l 22- [32m|[39m(B[m rev[32m;[39m(B[m [32mdo[39m(B[m[?12l[?25h[?25l[32mne[39m(B[m [32m|[39m(B[m so[?12l[?25h[?25l(B[0;1m[34msort[39m(B[m [32m|[39m(B[m un[?12l[?25h[?25liq[32m)[4d[39m[42m  [49m(B[m[?12l[?25h[?25l    [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Merging R1"[6d[34mcat(B[0m[42m [49m(B[m[?12l[?25h[?25l (B[0;1m[33m"$i"[39m(B[m_L00*_R1_001.fastq.[?12l[?25h[?25lgz [32m>[39m(B[m "[?12l[?25h[?25l(B[0;1m[33m"$i"[39m(B[m_M[?12l[?25h[?25lE_L0[?12l[?25h[?25l01_R1_[?12l[?25h[?25l001.fas[?12l[?25h[?25ltq.gz[8;8Hec[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Merging R2"[10d[34mcat[39m(B[m (B[0;1m[33m"$i"[39m(B[m[?12l[?25h[?25l_L00*_R2_001.fastq.gz [32m>[39m(B[m "[?12l[?25h[?25l(B[0;1m[33m"$i"[39m(B[m_[?12l[?25h[?25lME_L[?12l[?25h[?25l001_R2[?12l[?25h[?25l_001.fa[?12l[?25h[?25lstq.gz[32m;[39m(B[m[?12l[?25h[?25l [32mdone[11d[39m(B[m[?12l[?25h[?25l[37;16H[16X[37;32H(B[0;7mM-D(B[m DOS Format[17X[37;63H(B[0;7mM-A(B[m Append[21X[37;94H(B[0;7mM-B(B[m Backup File[K[38;2H(B[0;7mC(B[m Cancel[16G[16X[38;32H(B[0;7mM-M(B[m Mac Format[17X[38;63H(B[0;7mM-P(B[m Prepend[20X[38;94H(B[0;7m^T(B[m To Files[K[36d(B[0;7mFile Name to Write: fastq_lane_merging.sh                                                                                    [36;1H(B[m[36;42H[?12l[?25h[?25l[36;42H[?12l[?25h[?25l[36;55H[1K (B[0;7m[ Writing... ](B[m[K[1;116H(B[0;7m        (B[m[36;54H(B[0;7m[ Wrote 10 lines ](B[m[37;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo       (B[0;7mM-A(B[m Mark Text[38;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy Text[36d[11d[?12l[?25h[?25l[36d[J[38d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  fastq_lane_merging.sh
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# chmod +x fastq_lane_merging.sh 
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  [0m[01;32mfastq_lane_merging.sh[0m
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# cd ..
+]0;root@mmiskinyte-lenovo: /home/rootroot@mmiskinyte-lenovo:/home/root# ls
+[0m[01;34m4Plex20Plex[0m  [01;34mdocs[0m  [01;34mresults[0m  [01;34msrc[0m  [01;34mtrimmed_fastqc[0m  [01;34muntrimmed_data[0m  [01;34mvariant[0m
+]0;root@mmiskinyte-lenovo: /home/rootroot@mmiskinyte-lenovo:/home/root# cd 4Plex20Plex/
+]0;root@mmiskinyte-lenovo: /home/root/4Plex20Plexroot@mmiskinyte-lenovo:/home/root/4Plex20Plex# ls[K[K[K]0;root@mmiskinyte-lenovo: /home/root/4Plex20Plexroot@mmiskinyte-lenovo:/home/root/4Plex20Plex# [K]0;root@mmiskinyte-lenovo: /home/root/4Plex20Plexroot@mmiskinyte-lenovo:/home/root/4Plex20Plex# rsync -a /home/root/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+]0;root@mmiskinyte-lenovo: /home/rootroot@mmiskinyte-lenovo:/home/root# ls
+[0m[01;34m4Plex20Plex[0m  [01;34mdocs[0m  [01;34mresults[0m  [01;34msrc[0m  [01;34mtrimmed_fastqc[0m  [01;34muntrimmed_data[0m  [01;34mvariant[0m
+]0;root@mmiskinyte-lenovo: /home/rootroot@mmiskinyte-lenovo:/home/root# cd variant/
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# mkdir -p untrimmed results/sam rest[Kults/bam results [K/bcf results/vcg[Kf
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  [0m[01;32mfastq_lane_merging.sh[0m  [01;34mresults[0m  [01;34muntrimmed[0m
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# rsync -a /home/root/4Plex20Plex/ /home/root/variant/untrimmed/
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls[K[Kcd untrimmed/
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# ls
+[0m[01;32m20PLEX_S22_L001_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L001_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R1_001.fastq.gz[0m   [01;32m4PLEX_S21_L004_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R2_001.fastq.gz[0m   [01;32m4PLEX_S21_L004_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L003_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L003_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R2_001.fastq.gz[0m
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# cp ../fastq_lane_merging.sh 
+cp: missing destination file operand after '../fastq_lane_merging.sh'
+Try 'cp --help' for more information.
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# cp ../fastq_lane_merging.sh .
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# ls
+[0m[01;32m20PLEX_S22_L001_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L001_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R1_001.fastq.gz[0m   [01;32m4PLEX_S21_L004_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R2_001.fastq.gz[0m   [01;32m4PLEX_S21_L004_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L003_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R1_001.fastq.gz[0m   [01;32mfastq_lane_merging.sh[0m
+[01;32m20PLEX_S22_L003_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R2_001.fastq.gz[0m
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# sh fastq_lane_merging.sh 
+Merging R1
+Merging R2
+Merging R1
+Merging R2
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# ls
+[0m[01;32m20PLEX_S22_L001_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R2_001.fastq.gz[0m     [01;32m4PLEX_S21_L003_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L001_R2_001.fastq.gz[0m  [01;31m20PLEX_S22_ME_L001_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R1_001.fastq.gz[0m  [01;31m20PLEX_S22_ME_L001_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L004_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R1_001.fastq.gz[0m      [01;32m4PLEX_S21_L004_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L003_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R2_001.fastq.gz[0m      [01;31m4PLEX_S21_ME_L001_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L003_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R1_001.fastq.gz[0m      [01;31m4PLEX_S21_ME_L001_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L004_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R2_001.fastq.gz[0m      [01;32mfastq_lane_merging.sh[0m
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# [K]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# cd ..
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls[K[Kmkdir -p untrimmed_merged
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  [0m[01;32mfastq_lane_merging.sh[0m  [01;34mresults[0m  [01;34muntrimmed[0m  [01;34muntrimmed_merged[0m
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# mv [K[K[Kl[Kcd untrimmed
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# ls
+[0m[01;32m20PLEX_S22_L001_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L003_R1_001.fastq.gz[0m  [01;31m20PLEX_S22_ME_L001_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L004_R1_001.fastq.gz[0m     [01;32mfastq_lane_merging.sh[0m
+[01;32m20PLEX_S22_L001_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L003_R2_001.fastq.gz[0m  [01;31m20PLEX_S22_ME_L001_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L004_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R1_001.fastq.gz[0m      [01;32m4PLEX_S21_L003_R1_001.fastq.gz[0m  [01;31m4PLEX_S21_ME_L001_R1_001.fastq.gz[0m
+[01;32m20PLEX_S22_L002_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R2_001.fastq.gz[0m      [01;32m4PLEX_S21_L003_R2_001.fastq.gz[0m  [01;31m4PLEX_S21_ME_L001_R2_001.fastq.gz[0m
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# mv *_ME_* ../untrimmed_merged/
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# cd ..[K[K[K[K[Kls
+[0m[01;32m20PLEX_S22_L001_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L002_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L004_R2_001.fastq.gz[0m
+[01;32m20PLEX_S22_L001_R2_001.fastq.gz[0m  [01;32m20PLEX_S22_L003_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L004_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L002_R1_001.fastq.gz[0m  [01;32m4PLEX_S21_L003_R2_001.fastq.gz[0m  [01;32mfastq_lane_merging.sh[0m
+[01;32m20PLEX_S22_L002_R1_001.fastq.gz[0m  [01;32m20PLEX_S22_L003_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L001_R1_001.fastq.gz[0m   [01;32m4PLEX_S21_L002_R2_001.fastq.gz[0m  [01;32m4PLEX_S21_L004_R1_001.fastq.gz[0m
+]0;root@mmiskinyte-lenovo: /home/root/variant/untrimmedroot@mmiskinyte-lenovo:/home/root/variant/untrimmed# v[Kcd ..
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  [0m[01;32mfastq_lane_merging.sh[0m  [01;34mresults[0m  [01;34muntrimmed[0m  [01;34muntrimmed_merged[0m
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# mv untrimmed raw
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# ls
+25_01_history.txt  README  [0m[01;32mfastq_lane_merging.sh[0m  [01;34mraw[0m  [01;34mresults[0m  [01;34muntrimmed_merged[0m
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git ass[K[Kdd 25[K[K[K[K[K[K[K[K[K[Kgit [K[K[K[Kgit pull https://github/Migaallee/variant_calling
+fatal: unable to access 'https://github/Migaallee/variant_calling/': Could not resolve host: github
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git pull https://github/Migaallee/variant_calling[1Pee/variant_calling
+fatal: unable to access 'https://github/Migaalee/variant_calling/': Could not resolve host: github
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git pull https://github/Migaalee/variant_callinglee/variant_calling[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmv untrimmed rawls[Kcd ..[3Plsmv *_ME_* ../untrimmed_merged/ls[Kcd untrimmedls[Kmkdir -p untrimmed_mergedcd ..[K[3Plssh fastq_lane_merging.sh ls[Kcp ../fastq_lane_merging.sh .[Kls[Kcd untrimmed/rsync -a /home/root/4Plex20Plex/ /home/root/variant/untrimmed/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmkdir -p untrimmed results/sam results/bam results/bcf results/vcf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd variant/[Kls[Kcd ..4Plex20Plex/ls[Kcd ..[3Plschmod +x fastq_lane_merging.sh ls[Knano fastq_lane_merging.shls[Kchmod +x fastq_lane_merging.shfor i in $(find ./ -type f -name "*.fastq.gz" | while read F; do basename $F | rev | cut -c 22- | rev; done | sort | uniq); do echo "Merging R1"; cat "$i"_L00*_R1_001.fastq.gz > "$i"_ME_L001_R1_001.fastq.gz; echo "Merging R2"; cat "$i"_L00*_R2_001.fastq.gz > "$i"_ME_L001_R2_001.fastq.gz >> fastq_lane_merging.sh; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[100Pgit pull https://github.com/Migaalee/variant_calling/pull/new/master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csh origin master[K[Kgit push origin masterll https://github.com/Migaalee/variant_calling/pull/new/master
+fatal: unable to update url base from redirection:
+  asked for: https://github.com/Migaalee/variant_calling/pull/new/master/info/refs?service=git-upload-pack
+   redirect: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FMigaalee%2Fvariant_calling%2Fpull%2Fnew%2Fmaster%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack
+]0;root@mmiskinyte-lenovo: /home/root/variantroot@mmiskinyte-lenovo:/home/root/variant# git pull https://github.com/Migaalee/variant_calling/pull/new/master[20P/Migaalee/variant_callinglee/variant_calling[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kgit pull https://github/Migaallee/variant_calling[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmv untrimmed rawls[Kcd ..[3Plsmv *_ME_* ../untrimmed_merged/ls[Kcd untrimmedls[Kmkdir -p untrimmed_mergedcd ..[K[3Plssh fastq_lane_merging.sh ls[Kcp ../fastq_lane_merging.sh .[Kls[Kcd untrimmed/rsync -a /home/root/4Plex20Plex/ /home/root/variant/untrimmed/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kmkdir -p untrimmed results/sam results/bam results/bcf results/vcf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd variant/[Kls[Kcd ..4Plex20Plex/ls[Kcd ..[3Plschmod +x fastq_lane_merging.sh ls[Knano fastq_lane_merging.shls[Kchmod +x fastq_lane_merging.shfor i in $(find ./ -type f -name "*.fastq.gz" | while read F; do basename $F | rev | cut -c 22- | rev; done | sort | uniq); do echo "Merging R1"; cat "$i"_L00*_R1_001.fastq.gz > "$i"_ME_L001_R1_001.fastq.gz; echo "Merging R2"; cat "$i"_L00*_R2_001.fastq.gz > "$i"_ME_L001_R2_001.fastq.gz >> fastq_lane_merging.sh; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[100Pgit pull https://github.com/Migaalee/variant_calling/pull/new/master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
